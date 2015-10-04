@@ -24,11 +24,11 @@ class Personnel {
     //description function to debug
     func description () -> String {
         
-        var personnelString = ""
+        var personnelString = "Number of employees : \(self.employeesArray.count)"
         
         for employee in self.employeesArray {
             
-            personnelString += "\r\n" + employee.description()
+            personnelString +=  "\r\n++++++++++++++++++++++\r\n" + employee.description()
         }
         
         return personnelString

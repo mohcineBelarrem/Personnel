@@ -141,8 +141,8 @@
 		4B7634871BC1537900900C34 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4B76348C1BC158E800900C34 /* Personnel.swift */,
 				4B76348A1BC1588900900C34 /* Employee.swift */,
+				4B76348C1BC158E800900C34 /* Personnel.swift */,
 				4B7634881BC1539F00900C34 /* IT.json */,
 			);
 			name = Model;
