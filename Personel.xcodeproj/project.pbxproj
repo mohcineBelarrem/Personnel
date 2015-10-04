@@ -13,6 +13,8 @@
 		4B76346B1BC151E500900C34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B76346A1BC151E500900C34 /* Images.xcassets */; };
 		4B76346E1BC151E500900C34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B76346C1BC151E500900C34 /* LaunchScreen.xib */; };
 		4B76347A1BC151E500900C34 /* PersonelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7634791BC151E500900C34 /* PersonelTests.swift */; };
+		4B7634861BC1536F00900C34 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7634851BC1536F00900C34 /* Employee.swift */; };
+		4B7634891BC1539F00900C34 /* IT.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B7634881BC1539F00900C34 /* IT.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		4B7634731BC151E500900C34 /* PersonelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7634781BC151E500900C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B7634791BC151E500900C34 /* PersonelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonelTests.swift; sourceTree = "<group>"; };
+		4B7634851BC1536F00900C34 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Employee.swift; path = ../Employee.swift; sourceTree = "<group>"; };
+		4B7634881BC1539F00900C34 /* IT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IT.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				4B7634631BC151E500900C34 /* AppDelegate.swift */,
-				4B7634651BC151E500900C34 /* ViewController.swift */,
-				4B7634671BC151E500900C34 /* Main.storyboard */,
+				4B7634871BC1537900900C34 /* Model */,
+				4B7634841BC1531500900C34 /* View */,
+				4B7634831BC152EA00900C34 /* Controller */,
 				4B76346A1BC151E500900C34 /* Images.xcassets */,
 				4B76346C1BC151E500900C34 /* LaunchScreen.xib */,
 				4B7634611BC151E500900C34 /* Supporting Files */,
@@ -110,6 +115,31 @@
 				4B7634781BC151E500900C34 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B7634831BC152EA00900C34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B7634651BC151E500900C34 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4B7634841BC1531500900C34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B7634671BC151E500900C34 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4B7634871BC1537900900C34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B7634881BC1539F00900C34 /* IT.json */,
+				4B7634851BC1536F00900C34 /* Employee.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +191,7 @@
 				TargetAttributes = {
 					4B76345D1BC151E500900C34 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = N9362VAWBT;
 					};
 					4B7634721BC151E500900C34 = {
 						CreatedOnToolsVersion = 6.4;
@@ -192,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7634891BC1539F00900C34 /* IT.json in Resources */,
 				4B7634691BC151E500900C34 /* Main.storyboard in Resources */,
 				4B76346E1BC151E500900C34 /* LaunchScreen.xib in Resources */,
 				4B76346B1BC151E500900C34 /* Images.xcassets in Resources */,
@@ -213,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B7634661BC151E500900C34 /* ViewController.swift in Sources */,
+				4B7634861BC1536F00900C34 /* Employee.swift in Sources */,
 				4B7634641BC151E500900C34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +373,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Personel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -351,6 +386,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Personel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
