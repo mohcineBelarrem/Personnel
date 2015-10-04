@@ -10,14 +10,17 @@ import Foundation
 
 //This is the class that will store all the employees
 //It is basically an Array of employees
+//It also serves as a the storing tool for the searchEngine
 
 class Personnel {
     
-    var employeesArray : [Employee]
+    var employeesArray        : [Employee]
+    var filtredEmployeesArray : [Employee]
     
     init(){
         
         self.employeesArray = []
+        self.filtredEmployeesArray = []
         
     }
     

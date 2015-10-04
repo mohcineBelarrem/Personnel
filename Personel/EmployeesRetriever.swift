@@ -59,7 +59,7 @@ class EmployeesRetriever {
                         
                         self.couldLoadData = true
                         
-                        println(self.employeesRecord.description())
+                        //println(self.employeesRecord.description())
                         
                     }
                 }

@@ -1,8 +1,8 @@
 {  
    "Employees":[  
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Bill",
+         "LastName":"Gates",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -14,8 +14,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Steve",
+         "LastName":"Jobs",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -27,8 +27,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Steve",
+         "LastName":"Wozniak",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -40,8 +40,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Mark",
+         "LastName":"Zuckerberg",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -53,8 +53,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Tim",
+         "LastName":"Berners-Lee",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -66,8 +66,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Susan",
+         "LastName":"Wozniaki",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -79,8 +79,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Jeff",
+         "LastName":"Bezos",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -92,8 +92,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Meg",
+         "LastName":"Whitman",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -105,8 +105,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Gupta",
+         "LastName":"Kumar",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -118,8 +118,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Marisa",
+         "LastName":"Mayer",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -131,8 +131,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Ahmed",
+         "LastName":"Laafta",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -144,8 +144,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Robert",
+         "LastName":"Kiosaky",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -157,8 +157,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Larry",
+         "LastName":"Page",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -170,8 +170,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Sergey",
+         "LastName":"Brinn",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -183,8 +183,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Linus",
+         "LastName":"Trovald",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -196,8 +196,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Isaac",
+         "LastName":"Newton",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -209,8 +209,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Albert",
+         "LastName":"Einstein",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -222,8 +222,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Dennis",
+         "LastName":"Ritchie",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -235,8 +235,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"James",
+         "LastName":"Gosling",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -248,8 +248,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Vint",
+         "LastName":"Cerf",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -261,8 +261,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Ada",
+         "LastName":"Byron",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -274,8 +274,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Nikola",
+         "LastName":"Tesla",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -287,8 +287,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Ada",
+         "LastName":"Byron",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -300,8 +300,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Michael",
+         "LastName":"Faraday",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -313,8 +313,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"James",
+         "LastName":"Watt",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -326,8 +326,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"James Clerk",
+         "LastName":"Maxwell",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -339,8 +339,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Evariste",
+         "LastName":"Galois",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -352,8 +352,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Theodor",
+         "LastName":"Liebeniz",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -365,8 +365,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Carl Friedrich",
+         "LastName":"Gauss",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
@@ -378,8 +378,8 @@
          "LineOfService":"Information Technology"
       },
       {  
-         "FirstName":"DUMMY",
-         "LastName":"EMPLOYEE",
+         "FirstName":"Al",
+         "LastName":"Khawarizmi",
          "PhoneNumber":"0123456789",
          "Fax":"0123456789",
          "Email":"dummy@mail.com",
