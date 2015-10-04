@@ -55,11 +55,23 @@ class Employee {
         
     }
     
-    //Computed read only property
+    //Computed read only properties
     
     var fullName  : String {
         
         return  self.firstName + " " + self.lastName
+    }
+    
+    //Computed phone & fax
+    
+    var formattedPhoneNumber : String {
+        
+      return  formatPhone(self.phoneNumber)
+    }
+    
+    var formattedFax : String {
+        
+        return  formatPhone(self.fax)
     }
     
     //Full Employee Description to help debug
@@ -79,8 +91,8 @@ class Employee {
         var employeeArray = [(String,String)]()
         
         employeeArray.append(("Full Name",self.fullName))
-        employeeArray.append(("Phone Number",self.phoneNumber))
-        employeeArray.append(("Fax",self.fax))
+        employeeArray.append(("Phone Number",self.formattedPhoneNumber))
+        employeeArray.append(("Fax",self.formattedFax))
         employeeArray.append(("Email",self.email))
         employeeArray.append(("Floor",self.floor))
         employeeArray.append(("WorkUnit",self.workUnit))
@@ -93,4 +105,24 @@ class Employee {
         return employeeArray
     }
     
+    
+    func formatPhone (numberToFormat : String) -> String {
+        
+        var formattedString = ""
+        
+        for var i=0 ; i<count(numberToFormat) ; i++ {
+            
+            let char = Array(numberToFormat)[i]
+            
+            if ( i==3 || i==6 ) {
+                
+                formattedString.append(Character("-"))
+            }
+            
+            formattedString.append(char)
+            
+        }
+        
+        return formattedString
+    }
 }
