@@ -21,10 +21,10 @@ class Personnel {
         
     }
     
+    //description function to debug
     func description () -> String {
         
         var personnelString = ""
-        
         
         for employee in self.employeesArray {
             
