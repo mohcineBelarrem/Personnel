@@ -65,8 +65,32 @@ class Employee {
     //Full Employee Description to help debug
     
     func description () -> String {
+      
+        return  self.fullName + "\r\n" + self.phoneNumber + "\r\n" + self.fax + "\r\n" + self.email + "\r\n" + self.floor + "\r\n" + self.workUnit + "\r\n" + self.address + "\r\n" + self.county + "\r\n" + self.zipCode + "\r\n" + self.lineOfService
+    }
+    
+    
+    //This method transforms an Employee object to an array so that the process
+    //Of showing an Employee in Detail can be automated
+    
+    func toArray () -> [(String,String)] {
         
-        return self.fullName + "\r\n" + self.phoneNumber + "\r\n" + self.fax + "\r\n" + self.email + "\r\n" + self.floor + "\r\n" + self.workUnit + "\r\n" + self.address + "\r\n" + self.county + "\r\n" + self.zipCode + "\r\n" + self.lineOfService
+        
+        var employeeArray = [(String,String)]()
+        
+        employeeArray.append(("Full Name",self.fullName))
+        employeeArray.append(("Phone Number",self.phoneNumber))
+        employeeArray.append(("Fax",self.fax))
+        employeeArray.append(("Email",self.email))
+        employeeArray.append(("Floor",self.floor))
+        employeeArray.append(("WorkUnit",self.workUnit))
+        employeeArray.append(("Address",self.address))
+        employeeArray.append(("County",self.county))
+        employeeArray.append(("ZipCode",self.zipCode))
+        employeeArray.append(("Line of service",self.lineOfService))
+        
+        
+        return employeeArray
     }
     
 }

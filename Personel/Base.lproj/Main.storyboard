@@ -39,15 +39,30 @@
         <scene sceneID="Z2v-E8-XHg">
             <objects>
                 <tableViewController title="Detail" id="1KS-lg-G9n" customClass="DetailViewController" customModule="Personel" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LYY-oa-hFh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="LYY-oa-hFh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Yjx-Ub-5bR">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="detailCell" rowHeight="70" id="Yjx-Ub-5bR">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yjx-Ub-5bR" id="eMR-AY-gNk">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" editable="NO" text="Steve Wozniak" translatesAutoresizingMaskIntoConstraints="NO" id="Zi4-Je-C9N">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Zi4-Je-C9N" secondAttribute="trailing" id="CPO-ip-jZl"/>
+                                        <constraint firstAttribute="bottom" secondItem="Zi4-Je-C9N" secondAttribute="bottom" id="DDy-5z-Bse"/>
+                                        <constraint firstItem="Zi4-Je-C9N" firstAttribute="leading" secondItem="eMR-AY-gNk" secondAttribute="leading" id="RfY-6b-4IF"/>
+                                        <constraint firstItem="Zi4-Je-C9N" firstAttribute="top" secondItem="eMR-AY-gNk" secondAttribute="top" id="fId-4a-YeN"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
