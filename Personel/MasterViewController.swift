@@ -6,10 +6,15 @@
 //  Copyright (c) 2015 Mohcine. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 
 //This is the MasterViewController
+//It manages : 
+//The tableView
+//The search Engine
+//The passing of data to detailViewController
 
 class MasterViewController: UITableViewController,UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating {
     
@@ -22,10 +27,11 @@ class MasterViewController: UITableViewController,UITableViewDelegate,UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+       
+        //First thing we load the data
         self.retriever.fetchData()
         
-        
+        //We then init the searchBar and the Controller responsible of it
         self.resultSearchController = ({
             
             //This part inits the searchController and creates the searchBar programmaticaly
@@ -47,18 +53,12 @@ class MasterViewController: UITableViewController,UITableViewDelegate,UITableVie
             controller.searchBar.layer.borderColor = UIColor(red: 200/255, green: 200/255, blue: 205/255, alpha: 1).CGColor
             controller.searchBar.returnKeyType = UIReturnKeyType.Done
             
-            
             return controller
         })()
         
         
         
-    }
-    
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         
-        //In case the user touched a blank area of the screen we should hide the keyboard
-        self.view.endEditing(true)
     }
     
     
@@ -77,6 +77,8 @@ class MasterViewController: UITableViewController,UITableViewDelegate,UITableVie
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        //number of cells
+        
         if (self.resultSearchController.active) {
             
             //case the user is searching we display the results according to his query
@@ -90,11 +92,12 @@ class MasterViewController: UITableViewController,UITableViewDelegate,UITableVie
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+        //cell content protocol
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("employeeCell", forIndexPath: indexPath) as! UITableViewCell
         
         var employeeToBeDisplayed : Employee!
         
-        // 3
         if (self.resultSearchController.active) {
             
             employeeToBeDisplayed = self.retriever.employeesRecord.filtredEmployeesArray[indexPath.row]
@@ -126,10 +129,13 @@ class MasterViewController: UITableViewController,UITableViewDelegate,UITableVie
                 
                 //closure body
                 let query = searchController.searchBar.text
-                let name  = comparedEmployee.fullName
+                
+                //This is the information by which we want to filter searches
+                //in this case it is the full name
+                let contactInfoToBeComparedTo  = comparedEmployee.fullName
                 
                 //closure return
-                let resultRange = name.rangeOfString(query, options: NSStringCompareOptions.CaseInsensitiveSearch)
+                let resultRange = contactInfoToBeComparedTo.rangeOfString(query, options: NSStringCompareOptions.CaseInsensitiveSearch)
                 
                 return  resultRange != nil
                 
@@ -137,6 +143,41 @@ class MasterViewController: UITableViewController,UITableViewDelegate,UITableVie
         
         self.tableView.reloadData()
         
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+       
+        if self.resultSearchController.active {
+            
+            self.resultSearchController.active = false
+        }
+        
+    }
+    
+    //Method triggered just before going to detail so we can exploit it to pass data
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "detailSegue" {
+            
+            let detailVC = segue.destinationViewController as! DetailViewController
+            let cell = sender as! UITableViewCell
+            
+            if let indexPath = self.tableView!.indexPathForCell(cell) {
+                
+                let employeeToBeDetailled : Employee!
+                
+                if self.resultSearchController.active {
+                    
+                    employeeToBeDetailled = self.retriever.employeesRecord.filtredEmployeesArray[indexPath.row]
+                    
+                } else {
+                    
+                     employeeToBeDetailled = self.retriever.employeesRecord.employeesArray[indexPath.row]
+                }
+                
+                detailVC.employeeToBeDetailled = employeeToBeDetailled
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

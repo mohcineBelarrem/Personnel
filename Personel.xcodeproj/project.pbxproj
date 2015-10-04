@@ -17,6 +17,7 @@
 		4B76348D1BC158E800900C34 /* Personnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76348C1BC158E800900C34 /* Personnel.swift */; };
 		4B76348F1BC15AA300900C34 /* EmployeesRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B76348E1BC15AA300900C34 /* EmployeesRetriever.swift */; };
 		4B7634911BC16C3600900C34 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7634901BC16C3600900C34 /* MasterViewController.swift */; };
+		4B7634961BC17FA600900C34 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7634951BC17FA600900C34 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4B76348C1BC158E800900C34 /* Personnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personnel.swift; sourceTree = "<group>"; };
 		4B76348E1BC15AA300900C34 /* EmployeesRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesRetriever.swift; sourceTree = "<group>"; };
 		4B7634901BC16C3600900C34 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		4B7634951BC17FA600900C34 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				4B76348E1BC15AA300900C34 /* EmployeesRetriever.swift */,
 				4B7634901BC16C3600900C34 /* MasterViewController.swift */,
+				4B7634951BC17FA600900C34 /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				4B7634911BC16C3600900C34 /* MasterViewController.swift in Sources */,
 				4B76348D1BC158E800900C34 /* Personnel.swift in Sources */,
 				4B76348B1BC1588900900C34 /* Employee.swift in Sources */,
+				4B7634961BC17FA600900C34 /* DetailViewController.swift in Sources */,
 				4B7634641BC151E500900C34 /* AppDelegate.swift in Sources */,
 				4B76348F1BC15AA300900C34 /* EmployeesRetriever.swift in Sources */,
 			);
