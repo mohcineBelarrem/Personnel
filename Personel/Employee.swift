@@ -28,10 +28,8 @@ class Employee {
     
     init (employee : NSDictionary){
         
-        
         //The constructor is very simple we take the JSON employee objects parsed as NSDictionary
         //and then we transform them into employee Objects
-        
         
         self.firstName = employee["FirstName"] as! String
         
@@ -63,7 +61,8 @@ class Employee {
         
         return  self.firstName + " " + self.lastName
     }
-
+    
+    //Full Employee Description to help debug
     
     func description () -> String {
         
